@@ -1,10 +1,10 @@
-a = 1
-b = 2
-c = a / b
+f_no = input("Please enter first Number")
+s_no = input("Please enter Second Number")
+c = int(f_no) / int(s_no)
 print(c)
-c = a * b
+c = int(f_no) * int(s_no)
 print(c)
-c = a + b
+c = int(f_no) + int(s_no)
 print(c)
-c = a - b
+c = int(f_no) - int(s_no)
 print(c)
