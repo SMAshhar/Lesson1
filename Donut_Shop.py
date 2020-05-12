@@ -8,7 +8,7 @@ print(donuts)
 donuts.remove("classic")
 donuts.insert(0, "classic")
 print(donuts)
-donuts += ["Limited edition special"]                           # some limited edition will be availale 
+donuts += ["Limited edition special"]                           # some limited edition will be availale at specieal occasions
 print(donuts)
 del donuts[7]
 print(donuts)
