@@ -1,13 +1,13 @@
-# Program to identify if you are enrolled or not and your data
+# Program to enroll yourself and give you a roll number
 
 
 
 applied = {
-    "Ahmed": ["Muhammad", "Ahmed", 10, "AI"],
-    "Saad": ["Muhammad", "Saad", 20, "CNC"],
-    "Ali": ["Syed", "Ali", 30, "IOT"],
-    "Tooba": ["Tooba", "Tanveer", 40, "BCC"],
-    "Tamoor": ["Tamoor", "Khan", 50, "AI"],
+    "PIAIC1": ["Muhammad", "Ahmed", 10, "AI"],
+    "PIAIC2": ["Muhammad", "Saad", 20, "CNC"],
+    "PIAIC3": ["Syed", "Ali", 30, "IOT"],
+    "PIAIC4": ["Tooba", "Tanveer", 40, "BCC"],
+    "PIAIC5": ["Tamoor", "Khan", 50, "AI"],
     }
 
 def new():
@@ -16,21 +16,55 @@ def new():
     application = []                    # asking the persone to insert their data
     name = str(input(print("\t\t Enter your first name : ", sep = "")))
     application.append(name)
-    last = application.append(str(input(print("\t\t Enter your last name : "))))
-    cnic = application.append(int(input(print("\t\t Enter your CNIC : "))))
-    course = application.append(str(input(print("\t\t Enter your course : "))))
+    last = (str(input(print("\t\t Enter your last name : "))))
+    application.append(last)
+    fname = (str(input(print("\t\t Enter your Fathre's name : "))))
+    application.append(fname)
+    cnic = (str(input(print("\t\t Enter your CNIC : "))))
+    application.append(cnic)
+    course = (str(input(print("\t\t Enter your course : "))))
+    application.append(course)
 
     print("\t\t========================================================\t\t")
 
-    applied[name] = application
+    rno = len(applied)                  # assigning roll number
+    applied[rno] = application          # inserting in dictionary
 
     print("\t\t========================================================\t\t")
 
-    print(f"\t\t {application}")                  # printing their application
-   
+    print(f"\t\t {application}")         # printing their application and issuing card
+                                
+    card = f"""                        
+    \t\tName = {name} {last}
+    \t\tFather's Name = {fname}
+    \t\tCNIC = {cnic}
+    \t\tCourse Applied = {course}
+    \t\tR. No = PIAIC{rno}
 
-new()
 
+    \t\tPlease remember your assigned PIAIC roll number
+    \t\t========================================================\t
+    """
 
+    return card
+
+# new()
+
+choice = str(input(print("\t\tPlease enter if you want to : \n 1) Fresh enrollment \n 2) Knowing if you are enrolled")))
+
+if choice == "1":
+    x = new()
+    print(x)
+
+if choice == "2":
+    x = str(input(print("\t\tEnter your PIAIC issued number")))
+    if x in applied:
+        print("\t\t===================================\t\t")
+        print("\t\tCongradulations, you are enrolled")
+        print("\t\t===================================\t\t")
+    else:
+        print("\t\t=======================\t\t")
+        print("\t\tBetter luck next time")
+        print("\t\t=======================\t\t")
 
 
