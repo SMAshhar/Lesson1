@@ -14,15 +14,15 @@ def new():
     print("\t\t========================================================\t\t")
     
     application = []                    # asking the persone to insert their data
-    name = str(input("\t\t Enter your first name : "))
+    name = input("\t\t Enter your first name : ")
     application.append(name)
-    last = (str(input("\t\t Enter your last name : ")))
+    last = input("\t\t Enter your last name : ")
     application.append(last)
-    fname = (str(input("\t\t Enter your Fathre's name : ")))
+    fname = input("\t\t Enter your Fathre's name : ")
     application.append(fname)
-    cnic = (str(input("\t\t Enter your CNIC : ")))
+    cnic = input("\t\t Enter your CNIC : ")
     application.append(cnic)
-    course = (str(input("\t\t Enter your course : ")))
+    course = input("\t\t Enter your course : ")
     application.append(course)
 
     print("\t\t========================================================\t\t")
@@ -66,4 +66,5 @@ if choice == "2":
         print("\t\t=======================\t\t")
         print("\t\tBetter luck next time")
         print("\t\t=======================\t\t")
+
 
