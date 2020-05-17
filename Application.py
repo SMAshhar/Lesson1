@@ -14,15 +14,15 @@ def new():
     print("\t\t========================================================\t\t")
     
     application = []                    # asking the persone to insert their data
-    name = str(input(print("\t\t Enter your first name : ", sep = "")))
+    name = str(input("\t\t Enter your first name : "))
     application.append(name)
-    last = (str(input(print("\t\t Enter your last name : "))))
+    last = (str(input("\t\t Enter your last name : ")))
     application.append(last)
-    fname = (str(input(print("\t\t Enter your Fathre's name : "))))
+    fname = (str(input("\t\t Enter your Fathre's name : ")))
     application.append(fname)
-    cnic = (str(input(print("\t\t Enter your CNIC : "))))
+    cnic = (str(input("\t\t Enter your CNIC : ")))
     application.append(cnic)
-    course = (str(input(print("\t\t Enter your course : "))))
+    course = (str(input("\t\t Enter your course : ")))
     application.append(course)
 
     print("\t\t========================================================\t\t")
@@ -50,14 +50,14 @@ def new():
 
 # new()
 
-choice = str(input(print("\t\tPlease enter if you want to : \n 1) Fresh enrollment \n 2) Knowing if you are enrolled")))
+choice = str(input("\t\tPlease enter if you want to : \n 1) Fresh enrollment \n 2) Knowing if you are enrolled"))
 
 if choice == "1":
     x = new()
     print(x)
 
 if choice == "2":
-    x = str(input(print("\t\tEnter your PIAIC issued number")))
+    x = str(input("\t\tEnter your PIAIC issued number"))
     if x in applied:
         print("\t\t===================================\t\t")
         print("\t\tCongradulations, you are enrolled")
@@ -66,5 +66,4 @@ if choice == "2":
         print("\t\t=======================\t\t")
         print("\t\tBetter luck next time")
         print("\t\t=======================\t\t")
-
 
