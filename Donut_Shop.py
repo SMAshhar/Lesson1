@@ -44,11 +44,11 @@ def purchasing():
       j = e * 10
       h = g + h + i + j
       break
-  x = input(print("Proceed to check out? Press Y/N"))
+  x = input("Proceed to check out? Press Y/N")
   if x == "Y"or x == "y":
     print("Your bill is Rs.", h)
 purchasing()
-z = input(print("Do you want to continue shopping? Press Y/N"))
+z = input("Do you want to continue shopping? Press Y/N")
 if z == "Y" or z == "y":
   purchasing()
 else:
