@@ -271,5 +271,14 @@
 #         print(x, end = "")
 #     print(" ")
 
-
+t = 5
+for x in range(1, t + 1):
+    for y in range(1, x + 1):
+        print(y, end = ' ')
+    print("")
+rows = 5
+for row in range(1, rows+1):
+    for column in range(1, row + 1):
+        print(column, end=' ')
+    print("")
 
